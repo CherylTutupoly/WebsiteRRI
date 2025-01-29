@@ -1,0 +1,357 @@
+body {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #D0EFFF;
+}
+
+header {
+    background-color: #002b5c; 
+    padding: 1px 1px; 
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 90px; 
+}
+
+.rri-2023-logo-2-icon {
+    width: 150px; /* Ukuran logo */
+    height: auto; /* Jaga rasio aspek */
+    object-fit: contain; /* Pastikan tidak terdistorsi */
+    margin-left: 90px; 
+    margin-top:  20px;
+}
+
+header nav {
+    display: flex; /* Flexbox untuk menu navigasi */
+    gap: 20px; /* Jarak antar item navigasi */
+    margin-left: auto; /* Geser navigasi ke kanan mendekati tombol */
+    margin-right: 50px; /* Jarak antara navigasi dan tombol Sign In */
+}
+
+header nav a {
+    color: #D0EFFF; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: 400; /* Normal */
+    font-size: 16px; /* Ukuran font */
+    padding: 5px 10px; /* Spasi di sekitar teks */
+    transition: color 0.3s, font-weight 0.3s; /* Animasi untuk hover dan aktif */
+}
+
+header nav a:hover {
+    color: #D0EFFF; /* Warna saat hover */
+    font-weight: 600;
+}
+
+header nav a:active {
+    font-weight: 600; /* Bold saat ditekan */
+    color: #D0EFFF; /* Opsional: Warna saat ditekan */
+}
+
+header nav a.active {
+    font-weight: 600; /* Bold untuk tautan aktif */
+    color: #D0EFFF; /* Warna khusus untuk tautan aktif */
+}
+
+.sign-in {
+    background-color: #1167B1; /* Warna tombol biru */
+    color: #D0EFFF; /* Warna teks tombol */
+    border: none; /* Hilangkan border */
+    padding: 10px 15px; /* Jarak dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Ubah kursor jadi pointer */
+    transition: background-color 0.3s; /* Efek hover */
+    margin-right: 95px;
+}
+
+.sign-in:hover {
+    background-color: #003d7e; /* Warna hover tombol */
+}
+
+.pro1-section {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: -20px;
+    font-family: 'poppins';
+}
+
+.pro1-section h2 {
+    font-size: 18px;
+    color: #002b5c;
+    margin-bottom: 60px;
+
+}
+
+/* Container Carousel */
+.container {
+    position: relative; /* Memungkinkan penggunaan elemen posisi absolut */
+    top: -20px ;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /* Sembunyikan elemen di luar area carousel */
+}
+
+/* Carousel */
+.carousel {
+    display: flex; /* Membuat elemen dalam carousel sejajar secara horizontal */
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%; /* Menampilkan hanya 3 gambar sekaligus */
+    max-width: 33.33%;
+    opacity: 0.5; /* Gambar di samping lebih redup */
+    transform: scale(0.8); /* Ukuran lebih kecil */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    opacity: 1; /* Gambar tengah lebih terang */
+    transform: scale(1); /* Gambar tengah diperbesar */
+    z-index: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #002b5c;
+}
+
+/* Navigasi Kiri dan Kanan */
+.carousel-control {
+    position: absolute;
+    top: 100px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #555;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+/* Indikator Carousel */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-indicators span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.carousel-indicators span.active {
+    background-color: #0080ff;
+}
+
+.song-section {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+}
+
+.song-section h2 {
+    position: relative;
+    top: -100;
+}
+
+.song-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: #0d355e;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 50px;
+    margin-bottom: -10px;
+}
+
+.song-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card img {
+    width: 100%;
+    height: auto;
+}
+
+.song-card p {
+    margin: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+}
+
+.song-card span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: #666;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.more-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0f8de8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.more-link:hover {
+    color: #0645ad;
+}
+
+.release-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.release-section h2 {
+    margin-bottom: 20px;
+}
+
+.release-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.release-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-card img {
+    width: 100%;
+    height: auto;
+}
+
+.release-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.more-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f8de8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.more-link:hover {
+    color: #0645ad;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #03254c; /* Warna latar belakang biru */
+    color: #ffffff; /* Warna teks putih */
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Pusatkan konten */
+}
+
+.footer-info {
+    max-width: 60%;
+}
+
+.footer-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon */
+}
+
+.social-media-icons a img {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons a img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.footer-logo img {
+    width: 100%;
+position: relative;
+top: 30px;
+max-width: 100%;
+overflow: hidden;
+height: 289px;
+object-fit: cover;
+    
+}

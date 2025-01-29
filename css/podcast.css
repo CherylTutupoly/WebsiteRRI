@@ -1,0 +1,284 @@
+body {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #D0EFFF;
+}
+
+header {
+    background-color: #002b5c; 
+    padding: 1px 1px; 
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 90px; 
+}
+
+.rri-2023-logo-2-icon {
+    width: 150px; /* Ukuran logo */
+    height: auto; /* Jaga rasio aspek */
+    object-fit: contain; /* Pastikan tidak terdistorsi */
+    margin-left: 90px; 
+    margin-top:  20px;
+}
+
+header nav {
+    display: flex; /* Flexbox untuk menu navigasi */
+    gap: 20px; /* Jarak antar item navigasi */
+    margin-left: auto; /* Geser navigasi ke kanan mendekati tombol */
+    margin-right: 50px; /* Jarak antara navigasi dan tombol Sign In */
+}
+
+header nav a {
+    color: #D0EFFF; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: 400; /* Normal */
+    font-size: 16px; /* Ukuran font */
+    padding: 5px 10px; /* Spasi di sekitar teks */
+    transition: color 0.3s, font-weight 0.3s; /* Animasi untuk hover dan aktif */
+}
+
+header nav a:hover {
+    color: #D0EFFF; /* Warna saat hover */
+    font-weight: 600;
+}
+
+header nav a:active {
+    font-weight: 600; /* Bold saat ditekan */
+    color: #D0EFFF; /* Opsional: Warna saat ditekan */
+}
+
+header nav a.active {
+    font-weight: 600; /* Bold untuk tautan aktif */
+    color: #D0EFFF; /* Warna khusus untuk tautan aktif */
+}
+
+.sign-in {
+    background-color: #1167B1; /* Warna tombol biru */
+    color: #D0EFFF; /* Warna teks tombol */
+    border: none; /* Hilangkan border */
+    padding: 10px 15px; /* Jarak dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Ubah kursor jadi pointer */
+    transition: background-color 0.3s; /* Efek hover */
+    margin-right: 95px;
+}
+
+.sign-in:hover {
+    background-color: #003d7e; /* Warna hover tombol */
+}
+
+.podcast-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.podcast-wrapper h2 {
+    margin-bottom: -5px;
+    color: #002b5c;
+    font-size: 18px;
+}
+
+.podcast-item {
+    display: flex;
+    align-items: center; /* Selaraskan elemen secara vertikal */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001a;
+    width: 1300px; /* Panjangkan kotak ke kiri dan kanan */
+    overflow: hidden;
+    padding: 15px; /* Tambahkan padding untuk ruang konten */
+    margin: 0 auto; /* Pusatkan kotak */
+    height: auto; /* Sesuaikan tinggi dengan konten */
+    background-color: #9bd6f4; /* Tambahkan warna latar belakang */
+}
+
+.podcast-content {
+    flex: 1; /* Konten mengambil sisa ruang */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan teks secara vertikal */
+
+}
+
+.podcast-item:hover {
+    cursor: pointer;
+    background-color: #77b7ff;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.podcast-image {
+    width: 150px; /* Ukuran gambar lebih kecil */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px; /* Jarak antara gambar dan konten teks */
+}
+
+.podcast-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.podcast-content {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.podcast-content h3 {
+    font-size: 18px;
+    color: #002b5c;
+    margin: 0;
+    font-weight: bold;
+}
+
+.podcast-content p {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 0;
+}
+
+.podcast-more-link {
+    display: block; /* Agar tombol menjadi blok dan berada di baris sendiri */
+    margin: 20px auto; /* Pusatkan tombol di tengah secara horizontal */
+    text-align: center; /* Teks berada di tengah */
+    font-size: 16px; /* Ukuran font */
+    color: #D0EFFF; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold;
+    padding: 10px 20px; /* Tambahkan padding untuk jarak dalam tombol */
+    border: 1px solid #002b5c; /* Tambahkan garis tepi */
+    border-radius: 8px; /* Membulatkan sudut tombol */
+    background-color: #002b5c; /* Transparan sebagai latar awal */
+    transition: all 0.3s ease; /* Efek transisi pada hover */
+    width: 120px; /* Panjangkan kotak ke kiri dan kanan */
+}
+.podcast-more-link:hover {
+    background : linear-gradient(to right, #187BCD, #D0EFFF);; /* Warna latar saat hover */
+    color: #002b5c; /* Warna teks saat hover */
+    text-decoration: none; /* Tetap tanpa garis bawah */
+}
+
+/*kategori*/
+.category-container {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.category-container h2 {
+    margin-bottom: 120px;
+    color: #002b5c;
+
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    width: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(135deg, #2ec4b6, #0f8de8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -80px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category:nth-child(2) {
+    background: linear-gradient(135deg, #34d399, #3b82f6);
+}
+
+.category:nth-child(3) {
+    background: linear-gradient(135deg, #f472b6, #2dd4bf);
+}
+
+.category:nth-child(4) {
+    background: linear-gradient(135deg, #10b981, #6366f1);
+}
+
+.category:nth-child(5) {
+    background: linear-gradient(135deg, #f472b6, #2dd4bf);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #03254c; /* Warna latar belakang biru */
+    color: #ffffff; /* Warna teks putih */
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Pusatkan konten */
+}
+
+.footer-info {
+    max-width: 60%;
+}
+
+.footer-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon */
+}
+
+.social-media-icons a img {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons a img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.footer-logo img {
+    width: 100%;
+position: relative;
+top: 30px;
+max-width: 100%;
+overflow: hidden;
+height: 289px;
+object-fit: cover;
+    
+}

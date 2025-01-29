@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musik.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap">
+    <title>RRI Sorong</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="rri-2023-logo-2-icon" src="public/images/rri-2023-logo-2.png" alt="Logo RRI">
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Semua</a>
+            <a href="#radio-section"class="nav-link">Radio</a>
+            <a href="berita.html" class="nav-link">Berita</a>
+            <a href="podcast.html" class="nav-link">podcast</a>
+            <a href="musik.html" class="nav-link">Musik</a>
+        </nav>
+        <a href="login.html">
+            <button class="sign-in">Sign In</button>
+        </a>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="pro1-section">
+        <h2>Program Unggulan</h2>
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-control left" onclick="prevSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/images/terbaru1.png" alt="Torang Setara">
+                </div>
+                <div class="carousel-item active">
+                    <img src="public/images/terbaru2.png" alt="Cek Fakta">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/images/terbaru3.png" alt="Mutiara Pagi">
+                </div>
+                <div class="carousel-control right" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <span onclick="setSlide(0)"></span>
+                <span onclick="setSlide(1)"></span>
+                <span onclick="setSlide(2)"></span>
+            </div>
+        </div>
+        </section>
+        <script src="musik.js"></script>
+
+        <section>
+            <div class="song-section">
+                <h2>Lagu Papua</h2>
+                <div class="song-container">
+                    <div class="song-card">
+                        <img src="public/images/l1.png" alt="Taman Bunga">
+                        <p>Taman Bunga</p>
+                        <span>Rio Grime</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l2.png" alt="Yuwa Uraki">
+                        <p>Yuwa Uraki</p>
+                        <span>Rio Grime</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l3.png" alt="Watinaimo">
+                        <p>Watinaimo</p>
+                        <span>Rio Grime</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l4.png" alt="Sajojo">
+                        <p>Sajojo</p>
+                        <span>Black Brothers</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l5.png" alt="Yamko Rambe Yamko">
+                        <p>Yamko Rambe Yamko</p>
+                        <span>Corry Rumbino</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l6.png" alt="Apuse">
+                        <p>Apuse</p>
+                        <span>Corry Rumbino</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l7.png" alt="E Mambo Simbo">
+                        <p>E Mambo Simbo</p>
+                        <span>Mambesak</span>
+                    </div>
+                    <div class="song-card">
+                        <img src="public/images/l8.png" alt="Rasine Ma Rasine">
+                        <p>Rasine Ma Rasine</p>
+                        <span>Wem Moesido</span>
+                    </div>
+                </div>
+                <a href="#" class="more-link">Lainnya</a>
+            </div>
+   </section>
+
+<section>
+    <div class="release-section">
+        <h2>Rilisan Terbaru</h2>
+        <div class="release-container">
+            <div class="release-card">
+                <img src="public/images/m1.png" alt="Shallow Water">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m2.png" alt="Lagu Pernikahan">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m3.png" alt="Kata">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m4.png" alt="Image 4">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m5.png" alt="Image 5">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m6.png" alt="Image 6">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m7.png" alt="Image 7">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m8.png" alt="Image 8">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m9.png" alt="Image 9">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m10.png" alt="Image 10">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m11.png" alt="Image 11">
+            </div>
+            <div class="release-card">
+                <img src="public/images/m12.png" alt="Image 12">
+            </div>
+        </div>
+        <a href="#" class="more-link">Lainnya</a>
+    </div>
+</section>
+        </body>
+        </html>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h3>Alamat</h3>
+                    <p>JL. Jenderal Ahmad Yani, No. 44, KLA Demak II, Kp. Baru, Distrik Sorong, Kota Sorong, Papua Bar. 98414</p>
+                    
+                    <h3>Kontak Kami</h3>
+                    <p>095 1328251</p>
+                    
+                    <h3>Sosial Media</h3>
+                    <div class="social-media-icons">
+                        <a href="#"><img src="public/images/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="public/images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="public/images/youtube.png" alt="YouTube"></a>
+                        <a href="#"><img src="public/images/x.png" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="public/images/rri-2023-logo-2.png" alt="RRI Logo">
+                </div>
+            </div>
+        </footer>
+        

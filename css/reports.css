@@ -1,0 +1,79 @@
+/* Program List */
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Ukuran kolom lebih kecil, otomatis menyesuaikan */
+    gap: 15px;
+    height: 100px;
+    color: #fff;
+}
+
+
+/* Program Item */
+
+.program-item {
+    background-color: #07480d;
+    border-radius: 8px;
+    /* Mengurangi radius agar lebih kompak */
+    padding: 12px;
+    /* Mengurangi padding untuk elemen lebih kecil */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /* Mengurangi efek bayangan agar lebih ringan */
+}
+
+
+/* Gambar Program */
+
+.program-image {
+    max-width: 100%;
+    height: 120px;
+    /* Ukuran gambar lebih kecil */
+    border-radius: 5px;
+    object-fit: cover;
+    /* Memastikan gambar tetap terpotong dengan proporsional */
+}
+
+
+/* Program Details */
+
+.program-details {
+    margin-top: 8px;
+}
+
+.program-title {
+    font-size: 1.1em;
+    /* Ukuran judul lebih kecil */
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Memberikan jarak lebih kecil */
+}
+
+.program-description {
+    font-size: 0.9em;
+    /* Ukuran deskripsi lebih kecil */
+    margin: 8px 0;
+}
+
+
+/* Tombol Edit */
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 10px;
+    /* Padding lebih kecil */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.9em;
+    /* Ukuran font tombol lebih kecil */
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #2980b9;
+}

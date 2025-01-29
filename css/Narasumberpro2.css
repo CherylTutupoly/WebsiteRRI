@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cce7ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.narsum-container {
+    padding: 20px;
+}
+.narsum-container h2 {
+    font-size: 18px;
+    color: #002b5c;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+.narsum-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002147;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-left:-10px;
+    margin-top: -30px;
+}
+.narsum-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.narsum-slide {
+    flex: 0 0 20%;
+    margin: 0 10px;
+}
+.narsum-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.narsum-indicator-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.narsum-indicators {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.narsum-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.narsum-indicator.active {
+    background-color: black;
+}
+
+.narsum-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #002b5c;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.narsum-nav-button.left {
+    left: 100px;
+}
+
+.narsum-nav-button.right {
+    right: 100px;
+}
+
+.narsum-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
